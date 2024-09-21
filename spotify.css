@@ -1,0 +1,333 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.main_content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music_player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav_option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav_option:hover{
+    opacity: 1;
+}
+
+.nav_option i{
+    font-size: 1.25rem;
+}
+
+.nav_option a{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib_option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.box_p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box_p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+
+}
+
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+
+.sticky_nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.sticky_nav_icons {
+    margin-left: 0.75rem;
+}
+
+.sticky_nav_options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_item{
+    margin-right: 1rem;
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card_title{
+    font-weight: 600;
+}
+
+.card_info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music_player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+}
+
+.controls{
+    width: 25%;
+}
+
+.player_con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_con_icon{
+    height: 1rem;
+    margin-right: 1.5rem;
+    opacity: 0.7;
+}
+
+.player_con_icon:hover{
+    opacity: 1;
+}
+
+.playback_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prog_bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.prog_bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.prog_bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.album_pic{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.album{
+    display: flex;
+    align-items: center;
+
+}
+
+.album2{
+    line-height: 0.2rem;
+    margin-right: 50px;
+}
+
+.song{
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+.writer{
+    font-size: 0.7rem;
+    font-weight: 350;
+}
+
+.volume{
+    appearance: none;
+    height: 5px;
+    width: 100px;
+    background-color: green;
+    border-radius: 20%;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con{
+    margin-right: 1rem;
+    margin-left: 5px; 
+}
+
+.img_con{
+    height: 1rem;
+    width: 1rem;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.img_con2{
+    margin-right: 5px;
+    margin-left: 0px;
+    height: 2.2rem;
+    width: 1.5rem;
+}
